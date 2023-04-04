@@ -1,0 +1,37 @@
+<div class="mt-5">
+  <h1 class="text-center mb-3">Sign Up</h1>
+  <form style="margin: 0 auto; max-width: 70%" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" formControlName="email" />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="username" class="form-control" id="username" formControlName="username" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password" />
+      </div>
+      <div class="col-6">
+        <label for="password_confirmation" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="password_confirmation"
+          formControlName="password_confirmation" />
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </div>
+    <div>
+      <p class="text-center mt-3">Already have an account? <a routerLink="/login">Login</a></p>
+    </div>
+  </form>
+</div>
