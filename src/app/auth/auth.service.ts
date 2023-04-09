@@ -37,7 +37,6 @@ export class AuthService {
       .subscribe((res: any) => {
         if (res.success) {
           // navigate to home
-          console.log(res);
           this.route.navigate(['/movies']);
         }
       });

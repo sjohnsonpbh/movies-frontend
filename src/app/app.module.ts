@@ -9,6 +9,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LoginComponent } from './auth/login/login.component';
     SignupComponent,
     NavComponent,
     LoginComponent,
+    MovieCardComponent,
   ],
   imports: [
     BrowserModule,

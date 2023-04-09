@@ -1,1 +1,8 @@
-<p>movies works!</p>
+<div class="watch-list-wrap">
+  <h4 *ngIf="movies.length < 1">Loading movies...</h4>
+  <h4 *ngIf="watchListMovies.length < 1">Loading Popular Movies...</h4>
+  <div class="watchlist">
+    <app-movie-card *ngFor='let movie of movies' [image_path]="movie.image_path" [id]='movie.id'
+      (eyeClick)='onEyeClick(movie)' (thumbClick)='onThumbClick(movie)'></app-movie-card>
+  </div>
+</div>
