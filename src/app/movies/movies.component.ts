@@ -15,11 +15,10 @@ export class MoviesComponent implements OnInit {
   ngOnInit(): void {
     this.movieService.fetchMovies().subscribe((res: any) => {
       if (res.success) {
-        this.movies = res.payload.results;
-        console.log('Res=' + res.payload.results);
+        this.movies = res.payload.movie;
       }
     });
   }
   onThumbClick(movie: Movie) {}
-  onEyeClick(movie) {}
+  onEyeClick(movie: Movie) {}
 }

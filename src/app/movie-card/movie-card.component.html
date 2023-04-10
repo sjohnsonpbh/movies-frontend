@@ -1,13 +1,7 @@
-<div class="movie-card-wrap">
-  <div>
-    <div class="card-wrap">
-      <img [src]="image_path" width='200px' height='300px' />
-    </div>
-    <div class="btn-bar">
-      <!-- <button class="btn btn-secondary" (click)="eyeClick()">watch</button>
-      <button class="btn btn-secondary" (click)='thumbClick()'>rate</button>  -->
-      <button class="btn btn-secondary">watch</button>
-      <button class="btn btn-secondary">rate</button>
-    </div>
+<div class="card">
+  <img src="https://image.tmdb.org/t/p/w500/{{image_path}}" class="card-img-top" alt="Movie poster image">
+  <div class="btn-bar text-center">
+    <button class="btn btn-secondary">watch</button>&nbsp;
+    <button class="btn btn-secondary">rate</button>
   </div>
 </div>
