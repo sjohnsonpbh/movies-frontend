@@ -9,6 +9,8 @@ import { Movie } from '../movies/movie';
 export class MovieCardComponent {
   @Input() id: number = 0;
   @Input() image_path: string = null;
+  @Input() description: string = null;
+  @Input() title: string = null;
   @Output() eyeClick = new EventEmitter<Movie>();
   @Output() thumbClick = new EventEmitter<Movie>();
 }

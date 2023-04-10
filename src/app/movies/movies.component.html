@@ -1,12 +1,21 @@
-<div class="row">
+<!-- <div class="row">
   <h4 style='color: white' *ngIf="movies.length < 1">Loading movies...</h4>
-  <!-- <h4 style='color: white' *ngIf="watchListMovies.length < 1">Loading Watchlist Movies...</h4> -->
+  <h4 style='color: white' *ngIf="watchListMovies.length < 1">Loading Watchlist Movies...</h4>
 
   <div class='col-3' *ngFor='let movie of movies'>
     <app-movie-card [image_path]="movie.image_path" [id]='movie.id' (eyeClick)='onEyeClick(movie)'
       (thumbClick)='onThumbClick(movie)'></app-movie-card>
   </div>
 
-</div>
+</div> -->
 
 <!-- make another row -->
+
+<div class="row">
+  <div class="card-group card-group-scroll">
+    <div *ngFor='let movie of movies'>
+      <app-movie-card [image_path]="movie.image_path" [id]='movie.id' [description]="movie.description"
+        [title]='movie.title' (eyeClick)='onEyeClick(movie)' (thumbClick)='onThumbClick(movie)'></app-movie-card>
+    </div>
+  </div>
+</div>

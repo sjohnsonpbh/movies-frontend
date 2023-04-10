@@ -1,7 +1,18 @@
-<div class="card">
-  <img src="https://image.tmdb.org/t/p/w500/{{image_path}}" class="card-img-top" alt="Movie poster image">
-  <div class="btn-bar text-center">
-    <button class="btn btn-secondary">watch</button>&nbsp;
-    <button class="btn btn-secondary">rate</button>
+<div class="card movie-card-wrap" *ngIf="image_path != null">
+  <img src="https://image.tmdb.org/t/p/w500/{{ image_path }}" class="card-img-top" alt="Movie poster image">
+  <p class="card-title">{{ title }}</p>
+  <!-- <p class="card-text">
+    {{ description }}
+  </p> -->
+  <div class="card-footer">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Click will add to movie watchlist.">
+      <img src="../../assets/img/eye_fill0.svg" alt="Add to watchlist image.">
+    </button>&nbsp;
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+      title="Click will allow rating this movie.">
+      <img src="../../assets/img/thumb_up_FILL0.svg" alt="Rating Thumbs up image">
+    </button>
   </div>
+
 </div>
