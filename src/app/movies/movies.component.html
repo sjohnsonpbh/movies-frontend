@@ -11,7 +11,7 @@
 
 <!-- make another row -->
 
-<div class="row">
+<div class="d-flex flex-row flex-wrap">
   <div class="card-group card-group-scroll">
     <div *ngFor='let movie of movies'>
       <app-movie-card [image_path]="movie.image_path" [id]='movie.id' [description]="movie.description"

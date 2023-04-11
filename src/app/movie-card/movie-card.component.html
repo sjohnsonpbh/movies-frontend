@@ -1,9 +1,6 @@
 <div class="card movie-card-wrap" *ngIf="image_path != null">
   <img src="https://image.tmdb.org/t/p/w500/{{ image_path }}" class="card-img-top" alt="Movie poster image">
   <p class="card-title">{{ title }}</p>
-  <!-- <p class="card-text">
-    {{ description }}
-  </p> -->
   <div class="card-footer">
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
       title="Click will add to movie watchlist.">
@@ -14,5 +11,4 @@
       <img src="../../assets/img/thumb_up_FILL0.svg" alt="Rating Thumbs up image">
     </button>
   </div>
-
 </div>
