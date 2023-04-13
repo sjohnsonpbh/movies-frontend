@@ -1,0 +1,26 @@
+<form #reviewForm="ngForm" (ngSubmit)="onSubmit(reviewForm)">
+  <!-- Comment -->
+  <div class="form-group" style='background-color: white;'>
+    <label for="review">Review:</label>
+    <input type="text" class="form-control" id="review" name="review" ngModel />
+  </div>
+
+  <!-- User_Rating -->
+  <div class="form-group" style='background-color: white;'>
+    <label for="user_rating">Rating:</label>
+    <label class="rating-label">
+      <input class="rating" max="5" oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)" step="0.5"
+        style="--value:2.5" type="range" value="2.5">
+    </label>
+  </div>
+
+
+
+  <!-- BUTTONS -->
+  <button type="submit" class="btn btn-primary mr-3" [disabled]="!reviewForm.valid">
+    Save
+  </button>
+  <button type="button" class="btn btn-warning" (click)="onResetForm()">
+    Cancel
+  </button>
+</form>

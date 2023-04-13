@@ -19,6 +19,4 @@ export class MoviesComponent implements OnInit {
       }
     });
   }
-  onThumbClick(movie: Movie) {}
-  onEyeClick(movie: Movie) {}
 }
