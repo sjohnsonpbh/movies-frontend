@@ -14,4 +14,12 @@ export class MovieService {
   fetchMovies(): Observable<Movie[]> {
     return this.http.get<Movie[]>(this.URL);
   }
+
+  saveReview(movie: Movie) {
+    // add review, and use the next(movie) to emit the movie to all who subscribe to this variable.
+  }
+
+  removeReview() {
+    // use the next(this.myMovies[idx]) to emit the movie recently removed to all who subscribe to this variable.
+  }
 }

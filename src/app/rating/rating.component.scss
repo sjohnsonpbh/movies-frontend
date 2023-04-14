@@ -1,7 +1,7 @@
 .rating {
   --dir: right;
   --fill: gold;
-  --fillbg: rgba(100, 100, 100, 0.15);
+  --fillbg: rgba(19, 18, 18, 0.15);
 
   --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
   --stars: 5;
@@ -57,3 +57,29 @@
 .rating-label {
   margin-block-end: 1rem;
 }
+
+// .backdrop {
+//   z-index: 99;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+
+//   width: 100vw;
+//   height: 100vh;
+
+//   background-color: rgba(0, 0, 0, 0.75);
+// }
+
+// .alert-box {
+//   z-index: 100;
+//   position: absolute;
+//   top: 25%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+//   padding: 1em;
+
+//   background-color: #fff;
+//   box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+//     0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+// }
