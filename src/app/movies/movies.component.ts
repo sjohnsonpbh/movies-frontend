@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./movies.component.scss'],
 })
 export class MoviesComponent implements OnInit, OnDestroy {
-  private selectedBookSubscription: Subscription;
+  private selectedMovieSubscription: Subscription;
   reviewAlert: string;
 
   movies: any = [];
@@ -25,4 +25,8 @@ export class MoviesComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {}
+
+  handleCloseModal() {
+    // change in movie service
+  }
 }

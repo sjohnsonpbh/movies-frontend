@@ -19,8 +19,12 @@
     </div>
   </div>
 </div>
-<!-- ngIf here to open modal if  -->
-<app-rating></app-rating>
 
+
+<!-- ngIf here to open modal if  -->
+<!-- <app-rating [alertMsg]="reviewAlert" *ngIf="reviewAlert" [closeModal]="handleCloseModal()">
+  </app-rating> -->
+
+<app-rating></app-rating>
 <!-- <app-movie-card [image_path]="movie.image_path" [id]='movie.id' [description]="movie.description" [title]='movie.title'
   (eyeClick)='onEyeClick(movie)' (thumbClick)='onThumbClick(movie)'></app-movie-card> -->

@@ -9,6 +9,8 @@ import { Movie } from '../movies/movie';
 export class MovieService {
   private URL = 'http://localhost:3000/api/v1/movies';
 
+  private movieModalId = null;
+
   constructor(private http: HttpClient) {}
 
   fetchMovies(): Observable<Movie[]> {
@@ -21,5 +23,9 @@ export class MovieService {
 
   removeReview() {
     // use the next(this.myMovies[idx]) to emit the movie recently removed to all who subscribe to this variable.
+  }
+
+  openModal() {
+    // return this.movieModalId = id;
   }
 }
