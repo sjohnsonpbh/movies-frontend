@@ -1,6 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { MovieService } from '../shared/movie.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-movie-card',
@@ -16,15 +14,15 @@ export class MovieCardComponent {
 
   // is rating boolean check for modal
 
-  constructor(private movieService: MovieService) {}
+  constructor() {}
 
   // event emitter to send isRating, and id to movies component, popup the modal
 
   onThumbClick(id: number) {
     // popup a modal with rating form
-    // this.isRating = true;
+    // this.isRating.emit(this.id) = true;
     // event emitter send to movies component
-    this.isRating.emit(true);
+    // this.isRating.emit(this.isRating);
   }
 
   onEyeClick(id: number) {
