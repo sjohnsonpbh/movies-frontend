@@ -1,19 +1,15 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../shared/movie.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.scss'],
 })
-export class MoviesComponent implements OnInit, OnDestroy {
-  private selectedMovieSubscription: Subscription;
-  reviewAlert: string;
-
+export class MoviesComponent implements OnInit {
   movies: any = [];
   watchListMovies: any = [];
-
+  // isRating = false;
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
@@ -24,9 +20,8 @@ export class MoviesComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnDestroy(): void {}
-
   handleCloseModal() {
     // change in movie service
+    // set isRating to false
   }
 }

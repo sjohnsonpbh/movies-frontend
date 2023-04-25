@@ -9,8 +9,6 @@ import { Movie } from '../movies/movie';
 export class MovieService {
   private URL = 'http://localhost:3000/api/v1/movies';
 
-  private movieModalId = null;
-
   constructor(private http: HttpClient) {}
 
   fetchMovies(): Observable<Movie[]> {
